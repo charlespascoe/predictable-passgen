@@ -1,0 +1,34 @@
+{
+  "name": "predictable-passgen",
+  "version": "0.1.0",
+  "description": "Deterministic Password Generator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpascoe95/predictable-passgen.git"
+  },
+  "author": "Charles Pascoe <charles@cpascoe.co.uk>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cpascoe95/predictable-passgen/issues"
+  },
+  "homepage": "https://github.com/cpascoe95/predictable-passgen#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.28",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-typescript": "^3.2.2",
+    "merge-stream": "^1.0.1",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "hbprng": "0.1.0"
+  }
+}
