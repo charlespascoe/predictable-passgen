@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/cpascoe95/predictable-passgen/issues"
   },
-  "homepage": "https://github.com/cpascoe95/predictable-passgen#readme"
+  "homepage": "https://github.com/cpascoe95/predictable-passgen#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-typescript": "^3.2.2",
+    "merge-stream": "^1.0.1",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.5.2"
+  }
 }
