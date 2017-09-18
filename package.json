@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/cpascoe95/predictable-passgen#readme",
   "devDependencies": {
+    "@types/node": "^8.0.28",
     "gulp": "^3.9.1",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-typescript": "^3.2.2",
