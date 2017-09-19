@@ -15,7 +15,7 @@ export class PasswordGenerator {
   private nonReplacement: boolean;
   private maxLength: number = -1;
 
-  constructor(private secret: Buffer, options: IPasswordGeneratorOptions = {}) {
+  constructor(options: IPasswordGeneratorOptions = {}) {
     this.hashAlg = options.hashAlg || 'sha256';
     this.characterSets = options.characterSets || ['abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'];
     this.nonReplacement = typeof options.nonReplacement === 'boolean' ? options.nonReplacement : false;
@@ -42,7 +42,7 @@ export class PasswordGenerator {
       throw new Error(`length must not be longer than ${this.maxLength} with non-replacement option`);
     }
 
-    let hbprng = new Hbprng(Buffer.concat([this.secret, seed]), this.hashAlg);
+    let hbprng = new Hbprng(seed, this.hashAlg);
 
     let newPass = '';
 
